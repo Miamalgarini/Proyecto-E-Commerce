@@ -9,8 +9,16 @@ function Navbar() {
             <a href="#">Productos</a>
             <a href="#">Nosotros</a>
             <a href="#">Contacto</a>
+            <div className="container">
+                <a className="navbar-brand text-uppercase" href="/">Nuestros productos
+                </a>
+            </div>
         </nav>
+
+
+
+
     );
 }
 
-export default Navbar;
+export default Navbar; 
