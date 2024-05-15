@@ -1,5 +1,15 @@
 import {ProductosGrid} from '../componentes/ProductosGrid'
+import Navbar, {} from '../componentes/navbar'
+
+
+
 
 export const LandingPage = ()=>{
-        return<ProductosGrid/>
+        return(
+                <div> 
+                        <Navbar/>
+                         <ProductosGrid/>
+                           
+                </div>
+        )
 }

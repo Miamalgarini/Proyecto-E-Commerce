@@ -1,4 +1,6 @@
 .productoCard {
+    /* display: flex;
+    flex-wrap: wrap; */
     list-style: none;
 text-transform: uppercase;
 text-align: center;

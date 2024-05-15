@@ -22,7 +22,10 @@ fetch("https://api.mercadolibre.com/oauth/token", requestOptions)
   .then((result) => console.log(result))
   .catch((error) => console.error(error));
 
+
+
 export const get = (path) => {
+  console.log({path});
   return fetch ( API + path, {myHeaders}
   ).then((results) => results.json());
 };
