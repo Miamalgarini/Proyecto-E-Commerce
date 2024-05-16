@@ -60,8 +60,8 @@ return (
           onChange={e => setSelectedOption(e.target.value)}
           className="form-select form-select-sm"
         >
-          {options.map(option => (
-            <option value={option.value}> {option.label} </option>
+          {options.map((option, index) => (
+            <option key={index} value={option.value}> {option.label} </option>
           ))}
 
 

@@ -25,8 +25,8 @@ fetch("https://api.mercadolibre.com/oauth/token", requestOptions)
 
 
 export const get = (path) => {
-  console.log({path});
-  return fetch ( API + path, {myHeaders}
+  console.log(`${API}${path}`);
+  return fetch ( API + path + "&limit=12", {myHeaders}
   ).then((results) => results.json());
 };
 
