@@ -1,21 +1,19 @@
-.productosGrid{
-    display: flex;
-    /* grid-template-columns: repeat(auto-fill,230px); */
-    gap:40px;
-    padding: 40px;
-    justify-content: center;
-    align-items: center;
-}
+
+    @media (max-width: 768px) {
+        .productosGrid {
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Cambia el tamaño de las columnas en pantallas más pequeñas */
+           /* Reduce el espacio entre los elementos de la cuadrícula en pantallas más pequeñas */
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .productosGrid {
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Cambia el tamaño de las columnas en pantallas aún más pequeñas */
+             /* Reduce aún más el espacio entre los elementos de la cuadrícula en pantallas más pequeñas */
+        }
+    }
+
 
 .contenedor{
-    background-color: rgb(253, 235, 177);
-}
-/* img{
-    width: 200px;
-    height: auto;
-} */
- @media (max-width:560px){
-    .productosGrid{
-        grid-template-columns:80%
-    }
+    background-color: linear-gradient(to right, #4ca1af, #c4e0e5);
 }

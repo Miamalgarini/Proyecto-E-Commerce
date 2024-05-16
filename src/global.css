@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+body {
+    font-family: "Josefin Sans", sans-serif;
+    
+}
+
+.productosGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Utiliza auto-fit para ajustar automáticamente el número de columnas */
+    grid-gap: 50px; /* Espacio entre los elementos de la cuadrícula */
+    padding: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    transition: box-shadow 0.8s ease;
+}
+
+.productosGrid:hover{
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+    .productosGrid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Cambia el tamaño de las columnas en pantallas más pequeñas */
+       /* Reduce el espacio entre los elementos de la cuadrícula en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .productosGrid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Cambia el tamaño de las columnas en pantallas aún más pequeñas */
+         /* Reduce aún más el espacio entre los elementos de la cuadrícula en pantallas más pequeñas */
+    }
+}
