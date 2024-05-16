@@ -88,9 +88,8 @@ function DetalleProducto() {
                         </div>
                     </article>
                     <article>
-                        <p>Color:</p>
                         <button className={styles.productVariant}>
-                        <img src="https://chelseaio.vtexassets.com/arquivos/ids/439215-800-auto?v=638308286884930000&width=800&height=auto&aspect=true" alt="" />
+                        <img src={products.thumbnail} alt="" />
                         </button>
                     </article>
                     <article>
