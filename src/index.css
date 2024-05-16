@@ -21,6 +21,7 @@ Estilo predeterminado para todo el cuerpo
   color: black;
   text-decoration: none;
   margin: 0 10px;
+  text-align: center;
 }
 
 .navbar a:hover {

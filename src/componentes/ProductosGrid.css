@@ -1,0 +1,21 @@
+.productosGrid{
+    display: flex;
+    /* grid-template-columns: repeat(auto-fill,230px); */
+    gap:40px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    background-color: rgb(253, 235, 177);
+}
+/* img{
+    width: 200px;
+    height: auto;
+} */
+ @media (max-width:560px){
+    .productosGrid{
+        grid-template-columns:80%
+    }
+}
