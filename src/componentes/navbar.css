@@ -1,36 +1,43 @@
 /* Navbar.css */
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    justify-content: center;
+    align-items:center;
     background-color: #333;
     color: #fff;
-    padding: 10px 20px;
+    padding: 10px 10px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+
+
 }
 
+
 .logo {
-    font-size: 1.5rem;
+    font-size: 4.5rem;
     font-weight: bold;
+    border-radius: 3px;
+    z-index: 1;
+
 }
 
 .menu {
     display: flex;
-    gap: 20px;
+    gap: 10px;
 }
 
 .menu a {
     color: #fff;
-    text-decoration: none;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-decoration:overline;
     transition: color 0.3s ease;
 }
 
 .menu a:hover {
-    color: #ffc107;
+    color: #19eeb5;
 }
 
 @media (max-width: 768px) {

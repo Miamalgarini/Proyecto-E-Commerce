@@ -4,6 +4,7 @@ import { LandingPage } from "./pages/LandingPage";
 import DetalleProducto from "./pages/DetalleProducto";
 
 import "./App.css";
+import './global.css';
 
 export const App = () => {
   return (

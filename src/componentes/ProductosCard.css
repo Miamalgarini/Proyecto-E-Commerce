@@ -1,20 +1,23 @@
 .productoCard {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-gap: 1px;
+    border: 1px solid #ccc;
+    padding: 10px;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
     list-style: none;
 text-transform: uppercase;
 text-align: center;
+background-color: linear-gradient(to right, #4ca1af, #c4e0e5);
 
 }
 
 .productosImage{
     margin-bottom: 2rem;
     border-radius: 10px;
-    background-color: azure;
+    background-color: linear-gradient(to right, #4ca1af, #c4e0e5);;
     width: 130px;
     height:215px;
 }
@@ -25,9 +28,17 @@ text-align: center;
     overflow: hidden;
 }
 
-@media(max-width:560px){
-    .productosImage{
-width: 90%;
-height: auto;
+
+@media (max-width: 768px) {
+    .productosGrid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Cambia el tamaño de las columnas en pantallas más pequeñas */
+       /* Reduce el espacio entre los elementos de la cuadrícula en pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .productosGrid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Cambia el tamaño de las columnas en pantallas aún más pequeñas */
+         /* Reduce aún más el espacio entre los elementos de la cuadrícula en pantallas más pequeñas */
     }
 }
